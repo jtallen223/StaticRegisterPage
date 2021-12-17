@@ -1,6 +1,9 @@
 body {
     background-color: #76c8ff;
     margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
 }
 
 header {
@@ -9,6 +12,10 @@ header {
     padding: .75rem 0;
     border-bottom: solid 1px dimgrey;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 
 header a {
@@ -27,4 +34,29 @@ header a {
 header a:hover {
     background-color: #1084d1;
     cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    padding: 1.5rem;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container > h1 {
+    margin: 0 0 .5rem;
+}
+
+form input, form button {
+    width: 100%min-width: 300px;
+    /*Tout inuts and forms have different default sizes. By changing the box-sizing we can fix this */
+    box-sizing: border-box;
+    margin: .75rem 0;
+    padding: .25rem;
+    line-height: 1.5rem;
+    font-size: 1em;
+    border: solid 1px gray;
+    border-radius: 3px;
 }
