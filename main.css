@@ -72,3 +72,11 @@ footer {
     padding-top: 1rem;
     text-align: center;
 }
+
+footer img {
+    margin: 0 .5rem;
+}
+
+footer img:hover {
+    cursor: pointer;
+}
